@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+Attachment LCD.svg is a SVG file containing 47 individual path geometries.
+ 
+Create a page to display this file.
+Add a text box that accepts a hexadecimal string as input. Include validation logic and error feedback.
+When a valid string is entered, use it to update the rendered SVG as follows:
+Convert the hexadecimal string to a suitable binary representation.
+Map each bit in the binary value to a path in the SVG file, ordered alphabetically by path id.
+For each bit, if the value is 1, set the corresponding path fill colour to black. Otherwise, set the path fill colour to white.
+ 
+Present your solution on https://jsfiddle.net/ or similar. Use pure JS/HTML/CSS only, no libraries.
 
-  <head>
-    <meta charset="UTF-8">
-    <!-- setting characters to UTF-8 for proper text display -->
-    <title>Customer LCD Viewer</title>
-    <link  href="styles.css">
-  </head>
-
-  <body>
-    <div class="logo" id="svg-container">
-      <svg xmlns="http://www.w3.org/2000/svg" id="R400-lcd-svg" width="332.077" height="128.4" viewBox="0 0 249.058 96.3">
+/svg
+<svg xmlns="http://www.w3.org/2000/svg" id="R400-lcd-svg" width="332.077" height="128.4" viewBox="0 0 249.058 96.3">
   <defs id="globalDefs">
     <style id="globalStyle">
       .lcd{stroke:#000;stroke-width:.09;fill:none}
@@ -64,14 +64,9 @@
   <path id="A6F" d="m180.181 30.06 3.238-2.219 1.559-17.883-3.18-3.48-.718.96-.48 1.142-.24 1.14-1.679 19.258z" class="lcd"/>
   <path id="A6G" d="m184.619 27.841-3.778 2.7 2.758 1.98h12.54l3.241-2.281-3.36-2.399z" class="lcd"/>
   </svg>
-    </div>
-    <div class="center-content">
-      <input class="input-box" type="text" id="hex-input" placeholder="Enter a hexadecimal string">
-      <div id="error-message">Invalid Hexadecimal string. Please enter a valid hexadecimal string.</div>
-      </div>
-      <div id="binary-number"></div>
-      <script src="script.js"></script>
-    
-  </body>
 
-</html>
+Html tags
+
+<!DOCTYPE> 	Defines the document type
+<meta>		Defines metadata about an HTML document
+<input>		Defines an input control
